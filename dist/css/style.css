@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inconsolata', monospace;
+	text-align: center;
+}
+
+html.darkenPage {
+	background-color: black;
+	opacity: 0.7;
+}
+
+html.darkenPage body {
+	opacity: 0.7;
+}
+
+.heading {
+	margin: 20px;
+	font-size: 2.1em;
+}
+
+.time {
+	position: relative;
+	right: 175px;
+}
+
+.level {
+	position: relative;
+	left: 130px;
+	top: -20px;
+}
+
+.row {
+	font-size: 0;
+}
+
+.col {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: #eee;
+	border-radius: 3px;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	vertical-align: top;
+	color: black;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 40px;
+	transition: all 1.0s;
+}
+
+.row:last-child .col {
+	border-bottom: none;
+}
+
+.row.col:last-child {
+	border-right: none;
+}
+
+.col.hidden {
+	background-color: cyan;
+	transition: transform 0.2s;
+	cursor: pointer;
+}
+
+.col.won {
+	background-color: rgb(109, 255, 109);
+}
+
+/* .col.mine {
+	background-color: yellowgreen;
+} */
+
+.col.lost {
+	background-color: rgb(253, 72, 72);
+}
+
+.col.hidden:hover {
+	background-color: rgb(133, 255, 255);
+	border: none;
+	box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.5);
+	transform: scale(1.03, 1.03);
+	-webkit-transform: scale(1.03, 1.03);
+	-moz-transform: scale(1.03, 1.03);
+}
+
+.board {
+	margin-bottom: 5%;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(100, 100, 100);
+}
+
+button {
+	padding: 0 .2rem;
+	border: none;
+	border-radius: 0.2rem;
+	background-color: #aaa;
+	color: #fff;
+	text-decoration: none;
+	font-size: 0.8rem;
+	font-weight: 700;
+	line-height: 1.5;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+button:hover {
+	color: black;
+	opacity: 0.85;
+}
+button:active {
+	box-shadow: inset 0 3px 4px hsla(0, 0%, 0%, 0.5);
+}

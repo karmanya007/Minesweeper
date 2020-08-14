@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Minesweeper</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="heading">Minesweeper</h1>
+        <div id="game">
+            <div class="container">
+                <div class="time">
+                    <h2>
+                        <span>Your time:</span>
+                        <span class="timer">0</span>
+                        <span>s</span>
+                    </h2>
+                </div>
+                <div class="level">
+                    <span><strong>Level: </strong></span>
+                    <select class="level_diff">
+                        <option value="easy">Easy</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    <button class="newGame" type="button">New game</button>
+                </div>
+            </div>
+            <div class="board"></div>
+        </div>
+    </main>
+    <footer>Sound effects obtained from<a href=”https://www.zapsplat.com”><strong> zapsplat.com</strong></a></footer>
+</body>
+
+</html>
