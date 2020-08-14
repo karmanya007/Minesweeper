@@ -4,6 +4,8 @@ Simple ol' minesweeper
 
 -------
 
+![image](./dist/img/minesweeper.jpg)
+
 Installation
 ------------
 
